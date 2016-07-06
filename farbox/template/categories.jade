@@ -1,0 +1,56 @@
+extends base
+block title
+	title= "日志分类" + " - " + site.title
+
+block header
+	include include/header
+block footer
+	include include/footer
+block content
+	.single
+		#categories
+			.page_wrap
+				ul.cat_list.clearfix
+					li.life
+						a.pic(href="/category/生活")
+							span
+						h2
+							a(href="/category/生活") [ 生活 ]
+						p
+							|why so serious？
+					li.share
+						a.pic(href="/category/分享")
+							span
+						h2
+							a(href="/category/分享") [ 分享 ]
+						p
+							|一些App
+							br
+							|一些文章
+							br
+							|一些音乐
+					li.photo
+						a.pic(href="/category/照片")
+							span
+						h2
+							a(href="/category/照片") [ 照片 ]
+						p
+							|随手拍
+
+				.clear
+				.pager.clearfix
+					a.gotop.icon-arrow_up(href="#")
+
+		.page_wrap
+			#fb_comments_container
+				.ds-thread(data-thread-key="categories", data-title="日志分类", data-url="http://xenon.farbox.com/categories")
+				script(type="text/javascript").
+					var duoshuoQuery = {short_name:"greenzorro"};
+					(function() {
+						var ds = document.createElement('script');
+						ds.type = 'text/javascript';ds.async = true;
+						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+						ds.charset = 'UTF-8';
+						(document.getElementsByTagName('head')[0] 
+						 || document.getElementsByTagName('body')[0]).appendChild(ds);
+					})();

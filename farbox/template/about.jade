@@ -1,0 +1,36 @@
+extends base
+block title
+	title= "About" + " - " + site.title
+
+block header
+	include include/header
+block footer
+	include include/footer
+block content
+	.single
+		#about
+			.intro
+				.avatar
+				p
+					|Joker 
+					br
+					|why so serious？
+					br
+					|Arkham
+				.clear
+				.pager.clearfix
+					a.gotop.icon-arrow_up(href="#")
+
+		.page_wrap
+			#fb_comments_container
+				.ds-thread(data-thread-key="about", data-title="About", data-url="http://xenonfarboxcom/about")
+				script(type="text/javascript").
+					var duoshuoQuery = {short_name:"greenzorro"};
+					(function() {
+						var ds = document.createElement('script');
+						ds.type = 'text/javascript';ds.async = true;
+						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+						ds.charset = 'UTF-8';
+						(document.getElementsByTagName('head')[0] 
+						 || document.getElementsByTagName('body')[0]).appendChild(ds);
+					})();
