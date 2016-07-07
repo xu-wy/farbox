@@ -24,7 +24,7 @@ $accent2: #f5c5bf;
 $accent3: #3c3d60;
 $shadow1: 0 1px 4px rgba(0,0,0,0.35);
 $shadow2: 0 4px 4px rgba(0,0,0,0.35);
-$bg_img: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-32561-106.jpg);
+$bg_img: url(http://o9tqy3fpz.bkt.clouddn.com/bg.jpg);
 $easing1: cubic-bezier(0.15, 0.95, 0.41, 0.95);
 
 
@@ -566,7 +566,7 @@ input, textarea, button {
 			width: 40px;
 			height: 40px;
 			margin: 0 auto 1em;
-			background: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-logo.JPG) no-repeat center center;
+			background: url(hhttp://o9tqy3fpz.bkt.clouddn.com/logo.JPG) no-repeat center center;
 			background-size: 40px 40px;}
 		p {
 			line-height: 2em;
@@ -1144,9 +1144,8 @@ input, textarea, button {
 		}
 	}
 	.life a span { background-image: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-life.jpg);}
-	.share a span { background-image: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-share.jpg);}
+	.humor a span { background-image: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-share.jpg);}
 	.photo a span { background-image: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-photo.png);}
-	.media a span { background-image: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-media.jpg);}
 }
 // phone
 @media only screen and (max-width: $phone_landscape-max){
@@ -1244,12 +1243,12 @@ input, textarea, button {
 
 #about {
 	.intro {
-		background: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-BG_about.jpg) no-repeat center center;
+		background: url(http://o9tqy3fpz.bkt.clouddn.com/BG__about.jpg) no-repeat center center;
 		background-size: cover;
 		@include animation (fadein 1.2s $easing1 both);
 		.avatar {
 			margin: 0 auto;
-			background: url(http://o9tqy3fpz.bkt.clouddn.com/farbox-about.jpg) no-repeat center center;
+			background: url(http://o9tqy3fpz.bkt.clouddn.com/about.jpg) no-repeat center center;
 			background-size: cover;
 			border-radius: 50%;}
 		p {
